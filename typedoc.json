@@ -1,0 +1,24 @@
+{
+	"name": "logify",
+	"out": "./docs/api",
+	"entryPoints": [
+		"./index.d.ts"
+	],
+	"exclude": [
+		"src/__test__",
+		"**/node_modules/**",
+		"docs"
+	],
+	"externalPattern": [
+		"**/node_modules/**"
+	],
+	"excludePrivate": false,
+	"hideGenerator": true,
+	"readme": "README.md",
+	"theme": "default",
+	"tsconfig": "./tsconfig.json",
+	"plugin": [
+		"typedoc-plugin-missing-exports",
+		"typedoc-plugin-markdown"
+	]
+}
